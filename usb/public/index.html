@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" name="content" id="test1"/>
+<button type="button" id="sub">提交</button>
+<br/>
+<hr/>
+<button type="button" id="per100">采集指令频率100ms</button>
+<button type="button" id="per20">采集指令频率20ms</button>
+<button type="button" id="per10">采集指令频率10ms</button>
+<button type="button" id="per5">采集指令频率5ms</button>
+<button type="button" id="per125">采集指令频率1.25ms</button>
+<button type="button" id="start">开始</button>
+<button type="button" id="end">结束</button>
+<script>
+    sub.onclick= function () {
+        var con=test1.value;
+//        var con2=test2.value;
+//        var con3=test3.value;
+        console.log(con);
+        var xhr=new XMLHttpRequest();
+        xhr.onreadystatechange= function () {
+            if(xhr.readyState===4){
+                alert(xhr.responseText);
+            }
+        };
+        xhr.open("GET","msg?text="+con,true);
+        xhr.send(null);
+    }
+    per100.onclick= function () {
+        var con=test1.value;
+//        var con2=test2.value;
+//        var con3=test3.value;
+        console.log(con);
+        var xhr=new XMLHttpRequest();
+        xhr.onreadystatechange= function () {
+            if(xhr.readyState===4){
+                alert(xhr.responseText);
+            }
+        };
+        xhr.open("GET","per100?text="+con,true);
+        xhr.send(null);
+    };
+    per20.onclick= function () {
+        var con=test1.value;
+//        var con2=test2.value;
+//        var con3=test3.value;
+        console.log(con);
+        var xhr=new XMLHttpRequest();
+        xhr.onreadystatechange= function () {
+            if(xhr.readyState===4){
+                alert(xhr.responseText);
+            }
+        };
+        xhr.open("GET","per20?text="+con,true);
+        xhr.send(null);
+    };
+    per10.onclick= function () {
+        var con=test1.value;
+//        var con2=test2.value;
+//        var con3=test3.value;
+        console.log(con);
+        var xhr=new XMLHttpRequest();
+        xhr.onreadystatechange= function () {
+            if(xhr.readyState===4){
+                alert(xhr.responseText);
+            }
+        };
+        xhr.open("GET","per10?text="+con,true);
+        xhr.send(null);
+    };
+    per5.onclick= function () {
+        var con=test1.value;
+//        var con2=test2.value;
+//        var con3=test3.value;
+        console.log(con);
+        var xhr=new XMLHttpRequest();
+        xhr.onreadystatechange= function () {
+            if(xhr.readyState===4){
+                alert(xhr.responseText);
+            }
+        };
+        xhr.open("GET","per5?text="+con,true);
+        xhr.send(null);
+    };
+    per125.onclick= function () {
+        var con=test1.value;
+//        var con2=test2.value;
+//        var con3=test3.value;
+        console.log(con);
+        var xhr=new XMLHttpRequest();
+        xhr.onreadystatechange= function () {
+            if(xhr.readyState===4){
+                alert(xhr.responseText);
+            }
+        };
+        xhr.open("GET","per125?text="+con,true);
+        xhr.send(null);
+    };
+    start.onclick= function () {
+        var con=test1.value;
+//        var con2=test2.value;
+//        var con3=test3.value;
+        console.log(con);
+        var xhr=new XMLHttpRequest();
+        xhr.onreadystatechange= function () {
+            if(xhr.readyState===4){
+                alert(xhr.responseText);
+            }
+        };
+        xhr.open("GET","start?text="+con,true);
+        xhr.send(null);
+    };
+    end.onclick= function () {
+        var con=test1.value;
+//        var con2=test2.value;
+//        var con3=test3.value;
+        console.log(con);
+        var xhr=new XMLHttpRequest();
+        xhr.onreadystatechange= function () {
+            if(xhr.readyState===4){
+                alert(xhr.responseText);
+            }
+        };
+        xhr.open("GET","end?text="+con,true);
+        xhr.send(null);
+    }
+</script>
+</body>
+</html>
